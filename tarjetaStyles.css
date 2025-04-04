@@ -1,0 +1,58 @@
+body{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f8f8f8;
+    margin:0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.contenedor-tarjeta{
+    position: relative;
+    background-color: rgb(250, 240, 247);
+    border: 1px solid transparent;
+    box-shadow: 0px 0px 15px #ff5fca;
+    border-radius: 3vw;
+    padding: 2vw;
+    width: 40vw; /* Ajusta el tamaño si es necesario */
+    text-align: center; /* Para centrar el texto */
+    
+}
+
+.contenedor-tarjeta img {
+    position: absolute;
+    top: -10vw;   /* La empuja hacia arriba */
+    left: -10vw;  /* La empuja hacia la izquierda */
+
+    width: 15vw;        /* Escalable con pantalla */
+    max-width: 150px;   /* Límite máximo */
+    height: auto;
+
+    border-radius: 50%;
+    border: 0.3vw solid #eba5fcb3;
+    box-shadow: 0px 0px 30px #ff5fca;
+}
+
+
+.contenedor-tarjeta h1 {
+    font-size: 6vw;
+    word-wrap: break-word;
+    /* forzar que las palabras largas se dividan en 
+    varias líneas si no caben dentro del contenedor.*/
+}
+
+
+.contenedor-tarjeta button{
+    padding: 10px;
+    border: none; /* Elimina el borde predeterminado */
+    border-radius: 5px; /* Bordes redondeados */
+    box-shadow: 0px 0px 15px #ff5faa;
+    background-color: #ff8df9fd;
+    cursor: pointer; /* Cambia el cursor a "mano" al pasar por encima */
+    transition: all 0.3s ease;
+}
+
+.contenedor-tarjeta button:hover {
+    background-color: rgb(206, 163, 226);
+}
