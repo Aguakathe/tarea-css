@@ -1,0 +1,90 @@
+/* Estilos generales */
+
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    padding-top: 20px;
+    text-align: center;
+}
+
+/* Navbar horizontal pantallas grandes */
+
+.contenedor-nav {
+    list-style: none;
+    background-color: hsl(331, 100%, 95%);
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    padding: 2rem;
+    margin: 0;
+}
+
+.contenedor-nav li a {
+    color: rgb(7, 7, 7);
+    text-decoration: none;
+}
+
+.contenedor-nav li a:hover {
+    color: rgb(255, 14, 14);
+}
+
+/* Tarjetas */
+
+.img-tarjeta {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 2px 8px rgba(236, 15, 15, 0.404);
+}
+
+.tarjeta {
+    background-color: #ffe6f2;
+    padding: 1rem;
+    border-radius: 8px;
+    width: 25%;
+    box-shadow: 0 2px 8px rgba(151, 89, 163, 0.404);
+    text-align: center;
+    overflow: hidden;
+}
+
+.contenedor-tarjetas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 4rem 2rem;
+    gap: 2rem;
+}
+
+/*  Media Queries  */
+
+
+@media (max-width: 600px) {
+
+    /* Navbar vertical */
+    .contenedor-nav {
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+    }
+
+    .contenedor-nav li {
+        margin-bottom: 1rem;
+    }
+
+    /* Tarjetas en una sola columna */
+    .tarjeta {
+        width: 100%;
+        max-width: 350px;
+        margin: 0 auto; /* Centrar horizontalmente */
+    }
+
+    .contenedor-tarjetas {
+        flex-direction: column;
+        align-items: center;
+    }
+}
