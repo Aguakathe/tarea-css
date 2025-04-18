@@ -11,6 +11,10 @@ h1 {
     text-align: center;
 }
 
+/* ------------------------------ */
+/*   Estilos Menú de Navegación  */
+/* -------------------------------*/
+
 /* Navbar horizontal pantallas grandes */
 
 .contenedor-nav {
@@ -90,7 +94,12 @@ h1 {
 }
 
 
-/* Botones */
+/* ------------------- */
+/*   Estilos Galería  */
+/* ------------------*/
+
+
+/* Botones  Galería*/
 .contenedor-botones{
     display: flex;
     flex-wrap: wrap;
