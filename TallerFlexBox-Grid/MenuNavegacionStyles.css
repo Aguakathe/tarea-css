@@ -47,13 +47,19 @@ h1 {
 }
 
 .tarjeta {
-    background-color: #ffe6f2;
-    padding: 1rem;
-    border-radius: 8px;
-    width: 25%;
-    box-shadow: 0 2px 8px rgba(151, 89, 163, 0.404);
-    text-align: center;
-    overflow: hidden;
+    background-color: #ffe6f2; /* Color de fondo rosita claro */
+    padding: 1rem; /* Espaciado interior */
+    border-radius: 8px; /* Bordes redondeados */
+    width: 25%; /* Ancho relativo */
+    box-shadow: 0 2px 8px rgba(151, 89, 163, 0.404); /* Sombrado suave rosado */
+    text-align: center; /* Centra el contenido */
+    overflow: hidden; /* Evita que el contenido se desborde */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transiciones suaves */
+}
+
+.tarjeta:hover {
+    transform: scale(1.015); /* Escala levemente la tarjeta */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Sombra un poco más marcada pero aún sutil */
 }
 
 .contenedor-tarjetas {
