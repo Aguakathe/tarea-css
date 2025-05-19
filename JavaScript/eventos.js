@@ -21,3 +21,21 @@ const contador = document.getElementById("contador");
 inputTexto.addEventListener("input", function () {
     contador.textContent = "Caracteres escritos: " + inputTexto.value.length;
 });
+
+// Ejemplo 4: Mostrar valor seleccionado (change)
+const selectOpciones = document.getElementById("selectOpciones");
+const opcionSeleccionada = document.getElementById("opcionSeleccionada");
+
+selectOpciones.addEventListener("change", function () {
+    const valor = selectOpciones.value;
+    opcionSeleccionada.textContent = valor ? "Seleccionaste: " + valor : "";
+});
+
+// Ejemplo 5: Doble click para agrandar
+const box3 = document.getElementById("box3");
+
+box3.addEventListener("dblclick", function () {
+    const isExpanded = box3.style.width === "200px";
+    box3.style.width = isExpanded ? "100px" : "200px";
+    box3.style.height = isExpanded ? "100px" : "200px";
+});
