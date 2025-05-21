@@ -1,41 +1,49 @@
-// Click para cambiar de color
-document.getElementById("btnColor").addEventListener("click", function () {
-  const box = document.getElementById("box1");
-  box.style.backgroundColor = box.style.backgroundColor === "lightblue" ? "lightgray" : "lightblue";
+// Ejercicio 1
+const btnMotivar = document.getElementById("btnMotivar");
+const fraseMotivadora = document.getElementById("fraseMotivadora");
+
+btnMotivar.addEventListener("click", function () {
+    fraseMotivadora.textContent = "¡El trabajo duro derrota al talento natural! 💪";
 });
 
-const box2 = document.getElementById("box2");
-const msgHover = document.getElementById("msgHover");
+// Ejercicio 2
+const imagen = document.getElementById("imagenHover");
 
-box2.addEventListener("mouseover", function () {
-    msgHover.textContent = "¡Estás sobre la caja!";
+imagen.addEventListener("mouseover", () => {
+    imagen.src = "/img/sarada-galeria.jpg";
 });
 
-box2.addEventListener("mouseout", function () {
-    msgHover.textContent = "";
+imagen.addEventListener("mouseout", () => {
+    imagen.src = "/img/borut-galeria.jpg";
 });
 
+
+// Ejercicio 3
 const inputTexto = document.getElementById("inputTexto");
 const contador = document.getElementById("contador");
 
 inputTexto.addEventListener("input", function () {
-    contador.textContent = "Caracteres escritos: " + inputTexto.value.length;
+    contador.textContent = "Longitud del hechizo: " + inputTexto.value.length;
 });
 
-// Ejemplo 4: Mostrar valor seleccionado (change)
-const selectOpciones = document.getElementById("selectOpciones");
-const opcionSeleccionada = document.getElementById("opcionSeleccionada");
+// Ejercicio 4
+const personajeNaruto = document.getElementById("personajeNaruto");
+const mensajePersonaje = document.getElementById("mensajePersonaje");
 
-selectOpciones.addEventListener("change", function () {
-    const valor = selectOpciones.value;
-    opcionSeleccionada.textContent = valor ? "Seleccionaste: " + valor : "";
+personajeNaruto.addEventListener("change", () => {
+    const frase = personajeNaruto.value;
+    mensajePersonaje.textContent = frase ? "Eres: " + frase : "";
 });
 
-// Ejemplo 5: Doble click para agrandar
-const box3 = document.getElementById("box3");
+// Ejercicio 5
+const chakraBox = document.getElementById("chakraBox");
+const mensajeChakra = document.getElementById("mensajeChakra");
 
-box3.addEventListener("dblclick", function () {
-    const isExpanded = box3.style.width === "200px";
-    box3.style.width = isExpanded ? "100px" : "200px";
-    box3.style.height = isExpanded ? "100px" : "200px";
+chakraBox.addEventListener("dblclick", () => {
+    chakraBox.style.transform = "scale(1.5)";
+    chakraBox.style.transition = "transform 0.5s";
+    mensajeChakra.textContent = "¡Has liberado tu chakra interior! 🌀🔥";
+    setTimeout(() => {
+        chakraBox.style.transform = "scale(1)";
+    }, 1000);
 });
