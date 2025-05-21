@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Taller JavaScript</title>
+
+</head>
+
+<body>
+
+    <!-- Ejercicio 1: Cambiar color al hacer clic -->
+    <section>
+        <h2>Ejercicio 1: Click para Frase</h2>
+        <button id="btnMotivar">Frase Motivadora de Rock Lee</button>
+        <p id="fraseMotivadora" class="msg"></p>
+    </section>
+
+    <!-- Ejercicio 2: Mostrar mensaje al pasar el mouse -->
+    <section>
+        <h2>Ejercicio 2: Cambia de imagen al pasar el mouse</h2>
+        <img id="imagenHover" src="/img/borut-galeria.jpg" width="200">
+    </section>
+
+    <!-- Ejercicio 3: Contador de caracteres -->
+    <section>
+        <h2>Ejercicio 3: Escribe un Jutsu</h2>
+        <input type="text" id="inputTexto" placeholder="Escribe aquí tu nuevo Jutsu...">
+        <p id="contador" class="msg">Longitud del Jutsu: 0</p>
+    </section>
+
+    <!-- Ejercicio 4: Selección de personaje -->
+    <section>
+        <h2>Ejercicio 4: ¿Qué personaje de Naruto eres?</h2>
+        <select id="personajeNaruto">
+            <option value="">Elige tu personaje</option>
+            <option value="Naruto Uzumaki - ¡Nunca te rindes! ">Naruto Uzumaki</option>
+            <option value="Sasuke Uchiha - El poder lo es todo. ">Sasuke Uchiha</option>
+            <option value="Sakura Haruno - La mejor en Ninjutsu Médico.">Sakura Haruno</option>
+            <option value="Kakashi Hatake - El ninja que copia. ">Kakashi Hatake</option>
+        </select>
+        <p id="mensajePersonaje" class="msg"></p>
+    </section>
+
+    <!-- Ejercicio 5: Agrandar caja al hacer doble clic -->
+    <section>
+        <h2>Ejercicio 5: Doble click para liberar tu chakra</h2>
+        <div id="chakraBox" class="box" style="background: rgb(255, 203, 245);">🌀</div>
+        <p id="mensajeChakra"></p>
+    </section>
+
+    <!-- Link JavaScript-->
+    <script src="eventos.js"></script>
+</body>
+
+</html>
