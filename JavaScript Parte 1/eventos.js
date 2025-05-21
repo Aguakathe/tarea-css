@@ -2,8 +2,22 @@
 const btnMotivar = document.getElementById("btnMotivar");
 const fraseMotivadora = document.getElementById("fraseMotivadora");
 
+// Arreglo de frases motivadoras de Rock Lee
+const frasesRockLee = [
+    "¡El trabajo duro derrota al talento natural! 💪",
+    "¡Un verdadero ninja nunca se rinde! 🍃",
+    "¡Seguiré entrenando hasta que no pueda moverme! 🔥",
+    "¡No importa cuántas veces caigas, lo importante es levantarte! 🥋",
+    "¡El poder de la juventud está en el corazón! 💚",
+    "¡Mi camino del ninja es no rendirme jamás! ✊",
+    "¡Convertiré mis sueños en realidad con esfuerzo! 🌟",
+    "¡Mientras tenga brazos y piernas, seguiré luchando! 🧠"
+];
+
 btnMotivar.addEventListener("click", function () {
-    fraseMotivadora.textContent = "¡El trabajo duro derrota al talento natural! 💪";
+    const aleatoria = frasesRockLee[Math.floor(Math.random() * frasesRockLee.length)];
+    fraseMotivadora.textContent = aleatoria;
+    fraseMotivadora.scrollIntoView({ behavior: "smooth", block: "center" });
 });
 
 // Ejercicio 2
