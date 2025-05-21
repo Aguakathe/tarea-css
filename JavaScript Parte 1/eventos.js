@@ -8,13 +8,17 @@ btnMotivar.addEventListener("click", function () {
 
 // Ejercicio 2
 const imagen = document.getElementById("imagenHover");
+const msjHover = document.getElementById("msjHover");
 
 imagen.addEventListener("mouseover", () => {
     imagen.src = "/img/sarada-galeria.jpg";
+    msjHover.textContent = "Estás viendo a SARADA"
+    
 });
 
 imagen.addEventListener("mouseout", () => {
     imagen.src = "/img/borut-galeria.jpg";
+    msjHover.textContent = "Estás viendo a BORUTO"
 });
 
 

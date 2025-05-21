@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Taller Parte 2</title>
+</head>
+
+<body>
+
+    <section>
+        <h2>Ejercicio 1: Evento keydown – ¿Qué jutsu estás activando?</h2>
+        <input type="text" id="inputJutsu" placeholder="Escribe un jutsu...">
+        <p id="teclaPresionada" style="color: #1e90ff; font-weight: bold;"></p>
+    </section>
+
+    <section>
+        <h2>Ejercicio 2: Ayuda contextual con focus y blur</h2>
+        <label for="emailInput">Correo electrónico:</label><br>
+        <input type="email" id="emailInput" placeholder="ejemplo@correo.com">
+        <p id="ayudaTexto" class="oculto">Por favor, introduce un correo válido.</p>
+    </section>
+
+
+    <section>
+        <h2>Ejercicio 3: ContextMenu - Intenta desactivar el sello de Kurama</h2>
+        <p>Haz clic derecho y enfrenta las consecuencias.</p>
+        <div class="naruto-box" id="kurama">
+            <span>Haz clic derecho aquí</span>
+        </div>
+    </section>
+
+    <section>
+        <h2>Ejercicio 4: MouseLeave — Modo Sabio </h2>
+        <p>Pasa el cursor sobre la caja para que Naruto active su Modo Sabio.</p>
+
+        <div class="chakra-box" id="narutoBox">
+            <span>¡Activa el Modo Sabio!</span>
+        </div>
+    </section>
+
+    <section>
+        <h2>Ejercicio 5: Validar si se escribió el nombre de un personaje</h2>
+        <p>Escribe <strong>"kakashi"</strong>:</p>
+
+        <input type="text" id="kakashiInput" placeholder="Escribe kakashi">
+        <p id="mensajeKakashi"></p>
+        <img id="imgKakashi" src="https://i.pinimg.com/736x/de/33/b6/de33b6494dbf9ad86ad2ff8a1d1749cb.jpg"
+            alt="Kakashi"
+            style="display:none; max-width:200px; border-radius:10px; margin-top:10px; box-shadow:0 0 10px #00bcd4;">
+    </section>
+
+    <!-- Link JavaScript-->
+    <script src="events.js"></script>
+
+</body>
+
+</html>

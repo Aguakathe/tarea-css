@@ -1,0 +1,113 @@
+/* Ejercicio 1*/
+#inputJutsu {
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid rgb(60, 183, 255);
+    border-radius: 4px;
+}
+
+/* Ejercicio 2 */
+
+#emailInput {
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid rgb(243, 126, 247);
+    border-radius: 4px;
+}
+
+#ayudaTexto {
+    margin-top: 5px;
+    color: #0077cc;
+    font-size: 14px;
+    transition: opacity 0.3s;
+}
+
+.oculto {
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+}
+
+.visible {
+    opacity: 1;
+    height: auto;
+}
+
+/* Ejercicio 3*/
+
+.naruto-box {
+    width: 300px;
+    height: 300px;
+    margin: 30px auto 30px 0;
+    background-image: url("https://i.pinimg.com/736x/d6/f3/05/d6f30538b175d3a5e9dac78a0460b033.jpg");
+    background-size: cover;
+    background-position: center;
+    border: 4px solid #f57c00;
+    border-radius: 12px;
+    box-shadow: 0 0 30px #f57c00aa;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.naruto-box span {
+    background-color: rgba(243, 123, 24, 0.6);
+    padding: 8px 12px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+/* Ejercicio 4 */
+.chakra-box {
+    width: 300px;
+    height: 300px;
+    margin: 30px auto 30px 0;
+    background-image: url("https://i.pinimg.com/736x/64/6d/1d/646d1d9b7277d107649e312e6b53e214.jpg");
+    /* Naruto normal */
+    background-size: cover;
+    background-position: center;
+    border: 4px solid #fcb900;
+    border-radius: 20px;
+    box-shadow: 0 0 25px #fcb900aa;
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.chakra-box span {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    font-weight: bold;
+    padding: 10px 15px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+}
+
+.modo-sabio {
+    background-image: url("https://i.pinimg.com/736x/38/f6/c4/38f6c46c767b05fcb2ce1c336b5f3a03.jpg");
+    /* Naruto modo sabio */
+    box-shadow: 0 0 45px #ff5722cc;
+    border-color: #ff5722;
+}
+
+/* Ejercicio 5 */
+
+#kakashiInput {
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #10c77b;
+    border-radius: 6px;
+    margin-top: 10px;
+}
+
+#mensajeKakashi.correcto {
+    color: #4caf50;
+    margin-top: 10px;
+}
+
+#mensajeKakashi.incorrecto {
+    color: #f44336;
+    margin-top: 10px;
+}
